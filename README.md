@@ -1,6 +1,6 @@
 # ewbf-miner-docker
 
-Dockerfile to build EWBF miner
+Dockerfile to build [EWBF miner](https://github.com/nanopool/ewbf-miner)
 
 # Build instructions
 

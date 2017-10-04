@@ -29,7 +29,7 @@ docker run -d -it \
   --env LD_LIBRARY_PATH=/opt/nvidia/lib  \
   --env ZCASH_WALLET=<wallet>
   --env ZPOOL_USER=user1 \
-  quay.io/rporres/ewbf-miner
+  quay.io/srcd/ewbf-miner:v0.3.4b-1
 ```
 
 Without any arguments, it runs the miner. You can give arguments to `docker run` to run a different command

@@ -19,6 +19,7 @@ ENV SERVER1 zec-eu2.nanopool.org
 ENV PORT1 6666
 ENV SERVER2 zec-eu1.nanopool.org
 ENV PORT2 6666
+ENV EMAIL you@your.domain
 
 EXPOSE $API_PORT
 

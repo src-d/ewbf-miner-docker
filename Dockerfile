@@ -27,7 +27,6 @@ WORKDIR /tmp/
 RUN set -x \
   && apt-get update \
   && apt-get install -y curl \
-  && set -x \
   && curl -fSL https://github.com/nanopool/ewbf-miner/releases/download/v${EWBF_VERSION}/Zec.miner.${EWBF_VERSION}.Linux.Bin.tar.gz -o miner.tar.gz \
   && tar -xzvf miner.tar.gz \
   && mv miner / \

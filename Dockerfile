@@ -26,11 +26,12 @@ EXPOSE $API_PORT
 WORKDIR /tmp/
 RUN set -x \
   && apt-get update \
-  && apt-get install -y curl \
+  && apt-get install -y --no-install-recommends curl ca-certificates \
   && curl -fSL https://github.com/nanopool/ewbf-miner/releases/download/v${EWBF_VERSION}/Zec.miner.${EWBF_VERSION}.Linux.Bin.tar.gz -o miner.tar.gz \
   && tar -xzvf miner.tar.gz \
   && mv miner / \
   && apt-get remove -y curl \
+  && apt autoremove -y \
   && rm -rf /var/lib/apt/lists/*
 
 COPY miner-template.cfg /

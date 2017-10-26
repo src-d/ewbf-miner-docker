@@ -21,6 +21,7 @@ function build_config() {
                PORT1 \
                SERVER2 \
                PORT2 \
+               EMAIL \
                ZCASH_WALLET \
                ZPOOL_USER
     do
